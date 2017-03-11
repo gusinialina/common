@@ -1,0 +1,135 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+  .clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+}
+@font-face {
+  font-family: "OS";
+  src: url(../fonts/open-sans.regular.ttf);
+}
+@font-face {
+  font-family: "OSB";
+  src: url(../fonts/open-sans.bold.ttf);
+}
+
+.container {
+  width: 980px;
+  margin: 0px auto;
+}
+
+.menu_img {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.abs_black {
+  background: rgba(0, 0, 0, 0.6);
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  z-index: 3;
+  display: none;
+}
+
+.fixed_menu{
+  position:fixed;
+  background: #fff;
+  width: 30%;
+  height: 100%;
+  top:0;
+  left: -30%;
+  z-index: 4;
+  transition:0.8s;
+  opacity: 0;
+}
+.close{
+  width: 30px;
+  float: right;
+  display: block;
+  margin-top: 10px;
+  margin-right: 10px;
+  cursor:  pointer;
+}
+.fixed_menu a{
+  display: block;
+  width: 50%;
+  margin-top: 20px;
+  padding:20px 5%;
+}
+.burger{
+  width: 400px;
+  margin: 0 auto;
+}
+.title{
+  border: 1px solid black;
+  margin: 0px;
+  padding: 20px 0px;
+  cursor: pointer;
+}
+.info{
+  width: 300px;
+  border: 1px solid black;
+  margin: 0 auto;
+  display: none;
+}
+.info.active{
+  display: block;
+}
+@keyframes rotate1 {
+  0%{
+  transform: rotate(0deg);
+  }
+33%{
+  transform: rotate(-60deg);
+  }
+66%{
+  transform: rotate(30deg);
+  }
+100%{
+  transform: rotate(0deg);
+  }
+}
+.rotate1{
+  animation-name: rotate1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.blocks{
+  height: 1500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.red_block{
+  width: 100px;
+  height: 100px;
+  background: #f00;
+  margin: 30px;
+}
+.video{
+  
+  margin: 0 auto;
+}
+.video iframe{
+  width: 100vw;
+  height: 100vh;
+}
